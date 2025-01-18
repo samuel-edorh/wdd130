@@ -41,6 +41,7 @@ aside img{
     width: 200px;
     height: auto;
 }
+p {padding: 0;}
 
 footer{
     margin-top: 15px;
