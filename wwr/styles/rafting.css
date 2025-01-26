@@ -41,7 +41,7 @@ a{
 
 .hero h1{
     position: absolute;
-    top: 40%;
+    top: 10%;
     left: 30%;
     padding: 10px 20px;
     background: rgba(179, 38, 104, 0.5);
@@ -50,7 +50,7 @@ a{
 
 .hero article{
     position: absolute;
-    top: 7%;
+    top: 37%;
     left: 10%;
     padding: 15px;
     background: rgba(38, 75, 179, 0.5);
