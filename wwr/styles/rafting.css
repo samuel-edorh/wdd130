@@ -14,23 +14,42 @@
 
 body{
     max-width: 900px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
-h1 {
-    color: var(--secondary-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* HEADER SECTION */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--primary-color);
+    padding: 10px;
 }
 
-h2{
-    color: var(--secondary-color);
+header img {
+    width: 80px;
+    height: auto;
 }
 
-a{
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--accent2-color);
+    font-weight: bold;
 }
 
+/* HERO SECTION */
 .hero{
     position: relative;
     display: block;
@@ -46,6 +65,7 @@ a{
     padding: 10px 20px;
     background: rgba(179, 38, 104, 0.5);
     text-align: center;
+    color: white;
 }
 
 .hero article{
@@ -54,19 +74,43 @@ a{
     left: 10%;
     padding: 15px;
     background: rgba(38, 75, 179, 0.5);
-    margin-top: 20px;
+    color: white;
 }
 
-.hero article p{
-    color: var(--accent2-color);
+/* ADVENTURE SECTION */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
 }
 
-.hero article img{
-    float: right;
-    width: 100px;
+.adventures figure {
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
-.icon{
-    font-size: 10px;
+.adventures figcaption {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* FOOTER SECTION */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--secondary-color);
+    padding: 10px;
+}
+
+footer img {
+    width: 30px;
+    margin-left: 10px;
 }
